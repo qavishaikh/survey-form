@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="assets/logo2.png" alt="Logo" class="logo" height="100px">
+            </div>
+        </div>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/132baddcae454cadbc0044e14e2cf642?sid=cde92e0e-3e2c-4af0-9af7-1be5da20f7d3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        <form action="survy.php" method="post">
+            <h2>Would you use Swiftlead?</h2>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="use_swiftlead" value="Yes" required>
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="use_swiftlead" value="No" required>
+                    No
+                </label>
+            </div>
+
+            <label for="additional_feedback">Additional Feedback (optional):</label>
+            <textarea id="additional_feedback" name="additional_feedback" placeholder="Please provide your honest feedback"></textarea>
+            
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
